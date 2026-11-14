@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retina-pdi"
+version = "0.1.0"
+description = "Material do Módulo 02 (PDI biomédico) — Retina em Foco, IFPE Campus Palmares"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "opencv-python-headless>=4.9,<5",
+    "scikit-image>=0.22",
+    "scikit-learn>=1.4",
+    "pandas>=2.1",
+    "matplotlib>=3.8",
+    "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

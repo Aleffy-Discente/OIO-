@@ -1,0 +1,32 @@
+# Retina em Foco — Módulo 02 (Processamento Digital de Imagens Biomédicas)
+# Python 3.10+ (testado com 3.12)
+
+# Núcleo numérico / visão computacional
+numpy>=1.26
+scipy>=1.11
+opencv-python-headless>=4.9,<5      # mesma linha 4.x usada no Raspberry Pi (Módulos 3 e 4)
+scikit-image>=0.22
+scikit-learn>=1.4
+pillow>=10.0
+
+# Dados e visualização
+pandas>=2.1
+matplotlib>=3.8
+
+# Download dos dados públicos (HRF por HTTP; ODIR/RFMiD lendo Parquet do Hugging Face Hub por HTTP Range)
+requests>=2.31
+tqdm>=4.66
+pyarrow>=15.0
+huggingface_hub>=0.23
+fsspec>=2024.1
+
+# Ambiente de notebooks
+jupyterlab>=4.1
+ipykernel>=6.29
+ipywidgets>=8.1
+nbformat>=5.9
+nbclient>=0.10
+nbconvert>=7.16
+
+# Utilitário (extração de texto do PDF da Aula 1)
+pypdf>=4.0
